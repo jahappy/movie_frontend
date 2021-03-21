@@ -9,7 +9,7 @@ function MovieReview({ year, title, summary, poster, genres }) {
 		<div className="movie-title"><a href="single.html">{title}</a></div>
         <h5 className="movie__year">{year}</h5>
         <h5 className="movie__year">{genres.join(",")}</h5>
-        <p>{summary}</p>
+        <p className="summary">{summary.slice(0, 200)}</p>
     </div>
     );
 }
